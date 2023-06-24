@@ -19,6 +19,7 @@ interface FetchGamesReponse {
   count: number;
   results: Game[];
 }
+
 const useGames = () => {
   const [games, setGames] = useState<Game[]>([]);
   const [error, setError] = useState('');
@@ -35,7 +36,6 @@ const useGames = () => {
       })
       .catch((err) => {
         if (err instanceof CanceledError) return;
-
         setError(err);
         setLoading(false);
       });
