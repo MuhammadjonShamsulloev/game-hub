@@ -21,10 +21,10 @@ const GameGrid = ({ gameQuery }: Props) => {
         columns={{
           sm: 1,
           md: 2,
-          lg: 4,
+          lg: 3,
           xl: 5,
         }}
-        spacing={1}
+        spacing={2}
         padding="10px"
       >
         {isLoading &&
