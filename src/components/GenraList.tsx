@@ -1,3 +1,4 @@
+import genres from '../data/genres';
 import {
   Button,
   HStack,
